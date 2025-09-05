@@ -30,6 +30,13 @@
 * also muss ich das commiten und pushen über die Ubuntu-Console aus DDEV heraus machen
 * kleine Verunsicherung beim pushen des neuen Branches main_ph1 – weil ich [hier bei git-scm.com](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---set-upstream "https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---set-upstream") gelesen habe, dass `--set-upstream` nicht mehr aktuell ist – aber glücklicherweise ist `-u` auf `--set-upstream-to=` umgelabelt worden
 
+### Unerwartete Verwirrung der Git-Accounts
+* aber irgendwie hat VSCode dann doch commited - nur eben nicht gepushed
+* was dazu führte, dass ich nach erfolgreichem Push des neuen Branches main_ph1 plötzlich einen commit von meinem zweiten git-Account (der auch auf meinem Rechner lebt und eine eigene Verbindung zu GitHub pflegt) in meiner Timeline hatte
+* das war inakzeptabel!
+* doch bevor ich jetzt wieder die Docu wälze und wieder Zeit an Git verliere, habe ich die komplette Gittisierung neu aufgesetzt (.git und alles andere gelöscht, das GitHub Repo gelöscht)
+* Learning: git-Aktionen nur über die Ubuntu/DDEV Konsole, weil nur da die richtigen Accounts und Keys gelten
+
 ### Probleme mit dem .gitignore
 * leider wird beim Branchen das .gitignore nicht mit übernommen, so dass alles was ich eigentlich von GitHub fernhalten wollte, plötzlich wieder als untracked erscheint
 * also muss ich für jeden Branch das .gitignore neu schreiben (sicher gibt es Alternativen, aber momentan reicht mir das so)

@@ -10,3 +10,4 @@
     * beide zeigen die remote-Branches an, aber mit -v wird noch die Adresse der Verknüpfung angezeigt
 5. Warum ist es wichtig, für jede Phase einen eigenen Branch anzulegen?
     * so lassen sich die Änderungen jeder Phase leichter nachvollziehen, ggf. sogar als unabhängige Branches replizieren
+    * Allgemein sind Branches sinnvoll, um Veränderungung, Erweiterungen des Codes testen zu können, ohne den aktuell stabilen Status des Projektes zu verändern
