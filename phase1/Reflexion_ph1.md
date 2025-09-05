@@ -37,7 +37,12 @@
 * doch bevor ich jetzt wieder die Docu wälze und wieder Zeit an Git verliere, habe ich die komplette Gittisierung neu aufgesetzt (.git und alles andere gelöscht, das GitHub Repo gelöscht)
 * Learning: git-Aktionen nur über die Ubuntu/DDEV Konsole, weil nur da die richtigen Accounts und Keys gelten
 
+### pushen des neuen Branches
+* das pushen des neuen Branche mit `git push -u origin main_ph1` hat offenbar nicht richtig funktioniert (obwohl man überall liest, dass man das so macht), weil es offenbar einen alternativen upstream Pfad anlegt oder so ähnlich (ich hatte danach Probleme aus local/main zu pullen)
+* die bessere Variante ist `git push origin main_ph1`, wie es [hier im git Buch](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches "https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches") unter Pushing beschrieben ist
+
 ### Probleme mit dem .gitignore
 * leider wird beim Branchen das .gitignore nicht mit übernommen, so dass alles was ich eigentlich von GitHub fernhalten wollte, plötzlich wieder als untracked erscheint
 * also muss ich für jeden Branch das .gitignore neu schreiben (sicher gibt es Alternativen, aber momentan reicht mir das so)
 * beim mergen des main_ph1 in das main auf GitHub hat sich gezeigt, dass da jetzt ein gitignore zuviel ist – sollte ich jetzt jedesmal, wenn ich merge dieses Problem bekommen??
+* dieses Problem hat sich mit dem Neuaufsetzen des Git erledigt - wahrscheinlich hatte ich beim ersten Versuch den Branch angelegt ohne das .gitignore zu adden
