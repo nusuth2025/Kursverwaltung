@@ -1,0 +1,7 @@
+# alles was hier aufgeführt ist, wird nicht nach GitHub gepusht
+
+# der komplette .ddev-Ordner in root
+/.ddev/
+
+# die test.md wenn sie in root liegt
+/test.md
